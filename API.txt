@@ -1,0 +1,42 @@
+Location Manager Server
+
+Purpose
+
+The purpose of this server is store the user's current location and the picture they took at that location.
+
+
+Path: /
+Access MyFirstServlet
+
+Parameter: 
+Username 
+Password
+
+Response Type: HTML
+
+For doPost
+Response
+	if login succedded
+		<html>
+		<body>
+		Login was successfull.
+		</body>
+		</html>
+	if login failed
+		<html>
+		<body>
+		Login was unsuccessfull.
+		</body>
+		</html>
+
+path: /data
+
+Parameter:
+Username, Password, Image, Latitude, Longitude, Title, Snippet in string format
+
+Response Type: JSON
+
+Reponse:
+
+User JSON Array
+{"username":test,"password":test,"image":resjfber2rg245434,"latitude":80.2,"longitude":-37.3,"title":MyImage,"snippet":holiday}
